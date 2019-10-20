@@ -11,6 +11,7 @@ export default class Hero extends React.Component {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
+        backgroundColor: '#FFEBF0',
       }
     }
     return (
