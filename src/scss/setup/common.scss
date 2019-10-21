@@ -32,3 +32,9 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+
+// override BS 15px container
+.container {
+  padding-right: 24px;
+  padding-left: 24px;
+}
