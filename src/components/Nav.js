@@ -67,6 +67,9 @@ export default class Nav extends React.Component {
         left: 0,
         height: '100%',
         width: '100vw',
+        opacity: 0,
+        animation: '1s appear forwards',
+        animationDelay: '1s',
         transform: this.state.open ? 'translateX(0)' : 'translateX(-100%)',
         display: 'flex',
         flexDirection: 'column',
@@ -78,6 +81,9 @@ export default class Nav extends React.Component {
       menuItems: {
         marginTop: '80px',
         width: '100%',
+      },
+      menuChild: {
+        animation: '1s slideIn forwards',
       }
     }
 
@@ -93,9 +99,14 @@ export default class Nav extends React.Component {
 
     const menuItems = menu.map((item, index) => {
       return (
-        <h2 key={index}>
+        <h2 key={index} style={styles.menuChild}>
           <Link
+            className="menu-link"
             to={item.link}
+            href={item.link}
+            spy={true}
+            smooth={true}
+            duration={800}
             onClick={()=>{this.handleLinkClick();}}
           >
             {item.name}
