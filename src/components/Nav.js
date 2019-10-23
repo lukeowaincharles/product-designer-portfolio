@@ -62,7 +62,7 @@ export default class Nav extends React.Component {
         marginTop: '5px',
       },
       menuOverlay: {
-        position: 'absolute',
+        position: 'fixed',
         top: 0,
         left: 0,
         height: '100%',
