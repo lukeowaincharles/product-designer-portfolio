@@ -1,0 +1,40 @@
+/**
+ *
+ * Details:
+ *  - Name : Color ( mixin )
+ *  - Description : Gets color from colors map with the key provided
+ *
+ * What it's doing:
+ *  - Trow errors if the key don't exist
+ *  - Returns the color under the key given 
+ *    - Allows a subsequent key to return colors from two level map
+ *
+ */
+
+ @function color($key, $subsequent_key: null) {
+  // checks if exists on the map
+  @if (map-has-key($colors, $key)) {
+    $value: map-get($colors, $key);
+    // checks if string, to handle value as alias to the $colors map
+    @if (type-of($value) == 'string') {
+      @return color($value);
+      // checks if map, to get its map if $subsequent_key is set
+    } @else if (type-of($value) == 'map') {
+      @if ($subsequent_key != null) {
+        $value_is_map: $value;
+        @if (map-has-key($value_is_map, $subsequent_key)) {
+          $value: map-get($value_is_map, $subsequent_key);
+          @return $value;
+        } @else {
+          @error 'This subsequent key "'+ $subsequent_key +'" is not on the first level map. i.e. $colors['+ $key +']';
+        }
+      } @else {
+        @error 'The key "'+ $key +'" points to a map, a subsequent key is required. i.e. color($key,$subsequent_key);';
+      }
+    } @else {
+      @return $value;
+    }
+  } @else {
+    @error 'The key "'+ $key + '" is not a key of $colors';
+  }
+}

@@ -5,7 +5,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: color(main-pink);
+  background: white;
   font-family: $body-font;
   color: black;
 }
@@ -24,6 +24,19 @@ h6 {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
+.menu-link {
+  color: white;
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    color: black;
+  }
+}
+
 p {
   line-height: 1.55;
 }
@@ -31,4 +44,30 @@ p {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+// override BS 15px container
+.container {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
