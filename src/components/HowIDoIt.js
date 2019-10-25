@@ -24,6 +24,15 @@ export default class HowIDidIt extends React.Component {
       sliderContainer: {
         backgroundColor: '#FFF',
         padding: '5px 24px',
+      },
+      titleContainer: {
+        position: 'relative',
+        height: '50px',
+      },
+      title: {
+        position: 'absolute',
+        top: '0',
+        zIndex: '1',
       }
     }
     return (
@@ -34,8 +43,8 @@ export default class HowIDidIt extends React.Component {
             <div>
               <div style={styles.sliderContainer}>
                 <p>01.</p>
-                <div>
-                  <h2>Understand</h2>
+                <div style={styles.titleContainer}>
+                  <h2 style={styles.title}>Understand</h2>
                   <span className="highlight highlight--long"></span>
                 </div>
                 <p>Communication and understanding are integral to my process. Not only do I want to understand the users, but most importantly I want to understand your business and where you want to go.
