@@ -84,6 +84,7 @@ export default class Nav extends React.Component {
       },
       menuChild: {
         animation: '1s slideIn forwards',
+        fontSize: '25px',
       }
     }
 
