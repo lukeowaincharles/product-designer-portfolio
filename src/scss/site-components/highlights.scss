@@ -1,0 +1,30 @@
+.highlight {
+  position: relative;
+  display: block;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -58px;
+    left: 0;
+    height: 50px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-image: url('../../assets/images/highlight1.svg');
+  }
+  
+  &--long {
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &--small {
+    &:after {
+      width: 60%;
+      bottom: -55px;
+    }
+  }
+}

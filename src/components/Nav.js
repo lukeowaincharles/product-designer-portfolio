@@ -20,7 +20,7 @@ export default class Nav extends React.Component {
   }
 
   handleLinkClick() {
-    this.setState({menuOpen: false});
+    this.setState({open: false});
   }
 
   render() {
@@ -62,7 +62,7 @@ export default class Nav extends React.Component {
         marginTop: '5px',
       },
       menuOverlay: {
-        position: 'absolute',
+        position: 'fixed',
         top: 0,
         left: 0,
         height: '100%',
@@ -84,6 +84,7 @@ export default class Nav extends React.Component {
       },
       menuChild: {
         animation: '1s slideIn forwards',
+        fontSize: '25px',
       }
     }
 
