@@ -20,7 +20,9 @@ export default class Nav extends React.Component {
   }
 
   handleLinkClick() {
-    this.setState({menuOpen: false});
+    this.setState({open: false});
+    console.log('click event')
+    
   }
 
   render() {
