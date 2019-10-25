@@ -31,10 +31,11 @@ export default class HowIDidIt extends React.Component {
       },
       title: {
         position: 'absolute',
-        top: '0',
+        top: '-30px',
         zIndex: '1',
       }
     }
+
     return (
       <section style={styles.section} name="#howIDoIt" id="howIDoIt">
         <div className="container">
@@ -59,7 +60,11 @@ export default class HowIDidIt extends React.Component {
             <div>
               <div style={styles.sliderContainer}>
                 <p>02.</p>
-                <h2>Collaborate</h2>
+                <div style={styles.titleContainer}>
+                  <h2 style={styles.title}>Collaborate
+                  </h2>
+                  <span className="highlight highlight--long"></span>
+                </div>
                 <p>I believe that everyone can have brilliant ideas and you don't have to be a designer to suggest a great solution.
                 <br />
                 <br />
@@ -75,7 +80,10 @@ export default class HowIDidIt extends React.Component {
             <div>
               <div style={styles.sliderContainer}>
                 <p>03.</p>
-                <h2>Refine</h2>
+                <div style={styles.titleContainer}>
+                  <h2 style={styles.title}>Refine</h2>
+                  <span className="highlight highlight--small"></span>
+                </div>
                 <p>The beauty of Digital Design is that it is never done.
                 <br />
                 <br />
