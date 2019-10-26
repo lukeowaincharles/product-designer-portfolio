@@ -108,6 +108,7 @@ export default class Nav extends React.Component {
             spy={true}
             smooth={true}
             duration={800}
+            delay={800}
             onClick={()=>{this.handleLinkClick();}}
           >
             {item.name}
