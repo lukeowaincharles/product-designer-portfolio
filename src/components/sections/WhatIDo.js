@@ -15,16 +15,26 @@ export default class WhatIDo extends React.Component {
       {id: 8, name: 'Design Leadership'},
     ];
 
+    const styles = {
+      section: {
+        padding: '20px 0 70px',
+      },
+      listItem: {
+        display: 'inline-block',
+        width: '50%',
+      }
+    }
+
     const skillItems = skills.map((item, index) => {
       return (
-        <li key={index} >
+        <li className="list-item" key={index} style={styles.listItem}>
           {item.name}
         </li>
       )
     });
 
     return (
-      <section name="#whatIDo" id="whatIDo">
+      <section name="#whatIDo" id="whatIDo" style={styles.section}>
         <div className="container">
           <span className="sub-title sub-title--pink">What I do</span>
           <h2>Making products and services better for everyone.</h2>
