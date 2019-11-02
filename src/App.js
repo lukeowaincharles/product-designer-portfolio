@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import Hero from './components/Hero';
 import WhatIDo from './components/sections/WhatIDo';
 import HowIDoIt from './components/sections/HowIDoIt';
+import WhoIDoItFor from './components/sections/WhoIDoItFor';
 import './App.scss';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <WhatIDo />
       <HowIDoIt />
+      <WhoIDoItFor />
     </div>
   );
 }
