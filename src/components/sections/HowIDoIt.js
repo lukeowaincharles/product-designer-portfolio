@@ -19,7 +19,6 @@ export default class HowIDidIt extends React.Component {
     const styles = {
       section: {
         backgroundColor: '#F8F8F8',
-        padding: '20px 0 70px',
       },
       sliderContainer: {
         backgroundColor: '#FFF',

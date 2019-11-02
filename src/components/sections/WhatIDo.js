@@ -16,9 +16,6 @@ export default class WhatIDo extends React.Component {
     ];
 
     const styles = {
-      section: {
-        padding: '20px 0 70px',
-      },
       listItem: {
         display: 'inline-block',
         width: '50%',
@@ -34,7 +31,7 @@ export default class WhatIDo extends React.Component {
     });
 
     return (
-      <section name="#whatIDo" id="whatIDo" style={styles.section}>
+      <section name="#whatIDo" id="whatIDo">
         <div className="container">
           <span className="sub-title sub-title--pink">What I do</span>
           <h2>Making products and services better for everyone.</h2>
