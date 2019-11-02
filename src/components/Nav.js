@@ -23,6 +23,25 @@ export default class Nav extends React.Component {
     this.setState({open: false});
   }
 
+  componentDidMount(){
+    window.addEventListener('load', () => {
+      let scrollClass = 'page-top';
+
+      this.setState({ scrollClass });
+    });
+    window.addEventListener('scroll', () => {
+      let scrollClass = 'page-top';
+       if(window.scrollY >= 50){
+           scrollClass = 'page-scrolled';
+       }
+       this.setState({ scrollClass });
+    });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll");
+  }
+
   render() {
 
     const styles = {
@@ -108,6 +127,7 @@ export default class Nav extends React.Component {
             spy={true}
             smooth={true}
             duration={800}
+            delay={800}
             onClick={()=>{this.handleLinkClick();}}
           >
             {item.name}
@@ -118,11 +138,13 @@ export default class Nav extends React.Component {
 
     return (
       <div>
-        <div className="container">
-          <div style={styles.ham} className="hamburger" onClick={this.props.onClick ? this.props.onClick: () => {this.handleClick();}}>
-            <span style={{...styles.burger,...styles.burgerTop }}></span>
-            <span style={{...styles.burger,...styles.burgerMiddle }}></span>
-            <span style={{...styles.burger,...styles.burgerBottom }}></span>
+        <div className={`hamburger-wrapper ${this.state.scrollClass}`} onScroll={this.handleScroll}>
+          <div className="container">
+            <div style={styles.ham} className="hamburger" onClick={this.props.onClick ? this.props.onClick: () => {this.handleClick();}}>
+              <span style={{...styles.burger,...styles.burgerTop }}></span>
+              <span style={{...styles.burger,...styles.burgerMiddle }}></span>
+              <span style={{...styles.burger,...styles.burgerBottom }}></span>
+            </div>
           </div>
         </div>
         <div style={styles.menuOverlay}>

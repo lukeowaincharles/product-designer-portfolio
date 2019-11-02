@@ -15,7 +15,7 @@ export default class Hero extends React.Component {
       }
     }
     return (
-      <div className="hero" style={styles.hero}>
+      <div className="hero" style={styles.hero} name="#home">
         <div className="container">
           <div className="hero__wrapper">
             <div className="hero__content">
