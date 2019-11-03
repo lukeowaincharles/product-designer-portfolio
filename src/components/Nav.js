@@ -26,15 +26,20 @@ export default class Nav extends React.Component {
   componentDidMount(){
     window.addEventListener('load', () => {
       let scrollClass = 'page-top';
+      let hamburgerScollClass = '';
 
       this.setState({ scrollClass });
+      this.setState({ hamburgerScollClass });
     });
     window.addEventListener('scroll', () => {
       let scrollClass = 'page-top';
+      let hamburgerScollClass = '';
        if(window.scrollY >= 50){
            scrollClass = 'page-scrolled';
+           hamburgerScollClass = 'hamburger-scroll';
        }
        this.setState({ scrollClass });
+       this.setState({ hamburgerScollClass });
     });
   }
 
@@ -45,19 +50,6 @@ export default class Nav extends React.Component {
   render() {
 
     const styles = {
-      ham: {
-        height: '24px',
-        width: '24px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        cursor: 'pointer',
-        padding: '4px',
-        position: 'fixed',
-        marginTop: '31px',
-        zIndex: '6',
-      },
       burger: {
         width: '24px',
         height: '2px',
@@ -140,7 +132,7 @@ export default class Nav extends React.Component {
       <div>
         <div className="hamburger-wrapper">
           <div className="container">
-            <div style={styles.ham} className="hamburger" onClick={this.props.onClick ? this.props.onClick: () => {this.handleClick();}}>
+            <div className={`hamburger ${this.state.hamburgerScollClass}`} onClick={this.props.onClick ? this.props.onClick: () => {this.handleClick();}}>
               <span style={{...styles.burger,...styles.burgerTop }}></span>
               <span style={{...styles.burger,...styles.burgerMiddle }}></span>
               <span style={{...styles.burger,...styles.burgerBottom }}></span>
