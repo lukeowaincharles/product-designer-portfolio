@@ -29,6 +29,15 @@ a {
   color: color(bright-pink);
 }
 
+.coustard {
+  font-family: $title-font;
+}
+
+hr {
+  opacity: 0.1;
+  border-color: black;
+}
+
 .menu-link {
   color: white;
   transition: color 300ms ease-in-out;
