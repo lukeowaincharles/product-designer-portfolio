@@ -64,6 +64,12 @@ ul {
   }
 }
 
+.text {
+  &-center {
+    text-align: center;
+  }
+}
+
 @keyframes slideIn {
   0% {
     transform: translateX(-200px);
