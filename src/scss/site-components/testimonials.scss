@@ -1,0 +1,24 @@
+.testimonials {
+  .author {
+    &__image {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+    }
+
+    &__description {
+      display: inline-block;
+      margin: 16px 0 16px 14px;
+      vertical-align: super;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .quote-wrapper {
+    width: 32px;
+    padding-top: 18px;
+  }
+}
