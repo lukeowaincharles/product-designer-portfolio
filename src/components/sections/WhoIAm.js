@@ -31,7 +31,7 @@ export default class WhoIAm extends React.Component {
           Supporting others incredibly important to me. For this reason I’ve recently joint the <a href="https://www.triangirls.com/" target="_blank" rel="noopener noreferrer">Triangirls</a> team to help organise events and workshops to help women in tech.
           <br />
           <br />
-          I'm a keen writer about Design, but I also write about Leadership and Self Improvement. I'm currently featured as one of Mediums Top 50 Writers in Design.
+          I'm a keen writer about Design, but I also write about Leadership and Self Improvement. I'm currently featured as one of <a href="https://medium.com/tag/design/top-writers" target="_blank" rel="noopener noreferrer">Mediums Top 50 Writers in Design</a>.
           </p>
           <span className="sub-title">Articles</span>
           {articleList}

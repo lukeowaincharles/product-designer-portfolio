@@ -42,7 +42,7 @@ export default class WhoIAm extends React.Component {
             </ul>
           </div>
 
-          <p className="sub-title sub-title--pink"><a href="https://www.lukeowaincharles.co.uk/" target="_blank" rel="noopener noreferrer">Site built by Luke Charles</a></p>
+          <p className="sub-title sub-title--pink text-center"><a href="https://www.lukeowaincharles.co.uk/" target="_blank" rel="noopener noreferrer">Site built by Luke Charles</a></p>
         </div>  
       </section>
     )
