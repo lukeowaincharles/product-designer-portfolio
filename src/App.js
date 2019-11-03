@@ -6,6 +6,7 @@ import HowIDoIt from './components/sections/HowIDoIt';
 import WhoIDoItFor from './components/sections/WhoIDoItFor';
 import './App.scss';
 import Testimonials from './components/sections/Testimonials';
+import WhoIAm from './components/sections/WhoIAm';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <HowIDoIt />
       <WhoIDoItFor />
       <Testimonials />
+      <WhoIAm />
     </div>
   );
 }
