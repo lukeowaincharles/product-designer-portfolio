@@ -53,6 +53,17 @@ ul {
   padding-left: 24px;
 }
 
+.content-wrapper {
+  padding: 24px;
+  &--white {
+    background-color: white;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
 @keyframes slideIn {
   0% {
     transform: translateX(-200px);
