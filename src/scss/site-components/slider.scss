@@ -20,3 +20,27 @@
     }
   }
 }
+
+.testimonials {
+  .slick-dots {
+  
+    li {
+      margin: 0;
+      button {
+        &:before {
+          color: black;
+          opacity: 1;
+          font-size: 8px;
+        }
+      }
+    }
+  
+    li.slick-active {
+      button {
+        &:before {
+          color: color(bright-pink);
+        }
+      }
+    }
+  }
+}
