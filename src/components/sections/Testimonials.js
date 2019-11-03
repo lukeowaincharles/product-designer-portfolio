@@ -12,6 +12,7 @@ export default class Testimonials extends React.Component {
   render() {
 
     let settings = {
+      arrows: false,
       dots: true,
       infinite: false,
       speed: 500,
@@ -60,7 +61,7 @@ export default class Testimonials extends React.Component {
                     </div>
                     <div className="author__description">
                       <p className="coustard">Jim Silvy</p>
-                      <p>Freelance Digital Designer</p>
+                      <p className="text-size-14">Freelance Digital Designer</p>
                     </div>
                   </div>
                 </div>
@@ -81,7 +82,7 @@ export default class Testimonials extends React.Component {
                     </div>
                     <div className="author__description">
                       <p className="coustard">Michael Wallace</p>
-                      <p>Barclays Product Manager</p>
+                      <p className="text-size-14">Barclays Product Manager</p>
                     </div>
                   </div>
                 </div>
@@ -102,7 +103,7 @@ export default class Testimonials extends React.Component {
                     </div>
                     <div className="author__description">
                       <p className="coustard">Mazz Napier</p>
-                      <p>Eight Arms Project Manager</p>
+                      <p className="text-size-14">Eight Arms Project Manager</p>
                     </div>
                   </div>
                 </div>

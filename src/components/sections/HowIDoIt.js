@@ -8,6 +8,7 @@ export default class HowIDidIt extends React.Component {
   render() {
 
     let settings = {
+      arrows: false,
       dots: true,
       infinite: false,
       speed: 500,
