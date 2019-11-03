@@ -73,3 +73,12 @@
 .contact-list {
   margin: 0;
 }
+
+@include mq('lg') {
+  .client-image-list {
+  
+    li {
+      width: 22%;
+    }
+  }
+}

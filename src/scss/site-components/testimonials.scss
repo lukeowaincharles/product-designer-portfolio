@@ -22,3 +22,12 @@
     padding-top: 18px;
   }
 }
+
+@include mq('lg') {
+  .testimonials {
+
+    &__card {
+      margin-right: 33px;
+    }
+  }
+}

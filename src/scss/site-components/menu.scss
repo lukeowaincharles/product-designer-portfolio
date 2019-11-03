@@ -1,7 +1,14 @@
 .menu-link {
   color: white;
   position: relative;
-  transition: color 300ms ease-in-out;
+  transition: margin 300ms ease-in-out, color 300ms ease-in-out;
+
+  &.active {
+    color: color(main-pink);
+    margin-left: 15px;
+    pointer-events: none;
+    text-decoration: underline;
+  }
 
   &:after {
     content: '';

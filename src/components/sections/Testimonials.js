@@ -13,12 +13,22 @@ export default class Testimonials extends React.Component {
 
     let settings = {
       arrows: false,
-      dots: true,
       infinite: false,
       speed: 500,
       initialSlide: 0,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
     };
 
     const styles = {
@@ -47,7 +57,7 @@ export default class Testimonials extends React.Component {
           <h2>Don't just take my word for it.</h2>
           <Slider {...settings}>
             <div>
-              <div style={styles.sliderContainer}>
+              <div className="testimonials__card" style={styles.sliderContainer}>
                 <div className="quote-wrapper">
                   <img alt="quote-marks" src={Quote} />
                 </div>
@@ -68,7 +78,7 @@ export default class Testimonials extends React.Component {
               </div>
             </div>
             <div>
-            <div style={styles.sliderContainer}>
+            <div className="testimonials__card" style={styles.sliderContainer}>
               <div className="quote-wrapper">
                 <img alt="quote-marks" src={Quote} />
               </div>
@@ -89,7 +99,7 @@ export default class Testimonials extends React.Component {
               </div>
             </div>
             <div>
-            <div style={styles.sliderContainer}>
+            <div className="testimonials__card" style={styles.sliderContainer}>
               <div className="quote-wrapper">
                 <img alt="quote-marks" src={Quote} />
               </div>

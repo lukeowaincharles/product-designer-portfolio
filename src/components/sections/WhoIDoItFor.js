@@ -35,13 +35,18 @@ export default class WhoIDoItFor extends React.Component {
     return (
       <section name="#whoIDoItFor" id="whoIDoItFor">
         <div className="container">
-          <span className="sub-title sub-title--pink">Who I do it for</span>
-          <h2>I've worked with a variety of clients.</h2>
-          
-          <p>Over the last 6 years I have worked with small start-ups, large corporate clients and nearly everyone in between.</p>
-          <ul className="client-image-list">
-            {clients}
-          </ul>
+          <div className="row">
+            <div className="col-lg-6">
+              <span className="sub-title sub-title--pink">Who I do it for</span>
+              <h2>I've worked with a variety of clients.</h2>
+            </div>
+            <div className="col-lg-6">
+              <p>Over the last 6 years I have worked with small start-ups, large corporate clients and nearly everyone in between.</p>
+              <ul className="client-image-list">
+                {clients}
+              </ul>
+            </div>
+          </div>
         </div>  
       </section>
     )

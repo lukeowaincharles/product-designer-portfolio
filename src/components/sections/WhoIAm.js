@@ -22,21 +22,35 @@ export default class WhoIAm extends React.Component {
     return (
       <section name="#whoIAm" id="whoIAm">
         <div className="container">
-          <span className="sub-title sub-title--pink">Who I am</span>
-          <h2>Want to know more?</h2>
-          
-          <p>Formally trained as a Graphic Designer, I switched to web design in 2015. After having tonnes of fun designing marketing and portfolio sites, I landed my first role working as a Digital Product Designer for Barclays through We Are Why. Since then I have never looked back and have gone on to work with companies mainly in the Finance and Legal sector.
-          <br />
-          <br />
-          Supporting others incredibly important to me. For this reason I’ve recently joint the <a href="https://www.triangirls.com/" target="_blank" rel="noopener noreferrer">Triangirls</a> team to help organise events and workshops to help women in tech.
-          <br />
-          <br />
-          I'm a keen writer about Design, but I also write about Leadership and Self Improvement. I'm currently featured as one of <a href="https://medium.com/tag/design/top-writers" target="_blank" rel="noopener noreferrer">Mediums Top 50 Writers in Design</a>.
-          </p>
-          <span className="sub-title">Articles</span>
-          {articleList}
+          <div className="row">
+            <div className="col-lg-6">
+              <span className="sub-title sub-title--pink">Who I am</span>
+              <h2>Want to know more?</h2>
+            </div>
+            <div className="col-lg-6">
+              <p>Formally trained as a Graphic Designer, I switched to web design in 2015. After having tonnes of fun designing marketing and portfolio sites, I landed my first role working as a Digital Product Designer for Barclays through We Are Why. Since then I have never looked back and have gone on to work with companies mainly in the Finance and Legal sector.
+              <br />
+              <br />
+              Supporting others incredibly important to me. For this reason I’ve recently joint the <a href="https://www.triangirls.com/" target="_blank" rel="noopener noreferrer">Triangirls</a> team to help organise events and workshops to help women in tech.
+              <br />
+              <br />
+              I'm a keen writer about Design, but I also write about Leadership and Self Improvement. I'm currently featured as one of <a href="https://medium.com/tag/design/top-writers" target="_blank" rel="noopener noreferrer">Mediums Top 50 Writers in Design</a>.
+              </p>
+            </div>
+          </div>
 
-          <p>You can find me writing on <a href="https://twitter.com/LizHamburger" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.linkedin.com/in/elizabeth-hamburger/" target="_blank" rel="noopener noreferrer">LinkedIn</a>. But if you're of the visual nature, you can see some of my previous work pre Product Design on <a href="https://dribbble.com/LizHamburger" target="_blank" rel="noopener noreferrer">Dribbble</a>.</p>
+          
+          
+          <span className="sub-title">Articles</span>
+          <div className="article-wrapper">
+            {articleList}
+          </div>
+
+          <div className="row">
+            <div className="col-lg-6 offset-lg-6">
+              <p>You can find me writing on <a href="https://twitter.com/LizHamburger" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.linkedin.com/in/elizabeth-hamburger/" target="_blank" rel="noopener noreferrer">LinkedIn</a>. But if you're of the visual nature, you can see some of my previous work pre Product Design on <a href="https://dribbble.com/LizHamburger" target="_blank" rel="noopener noreferrer">Dribbble</a>.</p>
+            </div>
+          </div>
         </div>  
       </section>
     )

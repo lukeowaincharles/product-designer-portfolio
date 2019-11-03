@@ -30,17 +30,23 @@ export default class WhoIAm extends React.Component {
         <div className="container">
           <span className="sub-title">Get in touch</span>
           <h2>Let's talk</h2>
-          
+
           <div className="content-wrapper content-wrapper--white">
-            <p>I love talking as much as I do writing, so don’t hesitate to get in touch.
-            <br />
-            <br />
-            I’m open to new opportunities espeicallty those that involve helping others. Also please get in touch if you want to partner on a Triangirls event.
-            </p>
-            <hr />
-            <ul className="contact-list">
-              {contactList}
-            </ul>
+            <div className="row">
+              <div className="col-lg-6">
+                <p>I love talking as much as I do writing, so don’t hesitate to get in touch.
+                <br />
+                <br />
+                I’m open to new opportunities espeicallty those that involve helping others. Also please get in touch if you want to partner on a Triangirls event.
+                </p>
+                <hr className="hr hr--vertical-lg" />
+              </div>
+              <div className="col-lg-6">
+                <ul className="contact-list">
+                  {contactList}
+                </ul>
+              </div>
+            </div>
           </div>
 
           <p className="sub-title sub-title--pink text-center"><a href="https://www.lukeowaincharles.co.uk/" target="_blank" rel="noopener noreferrer">Site built by Luke Charles</a></p>
