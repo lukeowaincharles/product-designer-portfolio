@@ -1,0 +1,30 @@
+.menu-link {
+  color: white;
+  position: relative;
+  transition: color 300ms ease-in-out;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 26px;
+    height: 26px;
+    background-image: url('../../assets/images/arrow-right-black.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateX(-40px);
+    opacity: 0;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+
+  &:hover {
+    color: black;
+
+    &:after {
+      opacity: 1;
+      transform: translateX(50px);
+    }
+  }
+}
