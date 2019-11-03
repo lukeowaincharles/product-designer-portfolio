@@ -7,6 +7,7 @@ import WhoIDoItFor from './components/sections/WhoIDoItFor';
 import './App.scss';
 import Testimonials from './components/sections/Testimonials';
 import WhoIAm from './components/sections/WhoIAm';
+import GetInTouch from './components/sections/GetInTouch';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <WhoIDoItFor />
       <Testimonials />
       <WhoIAm />
+      <GetInTouch />
     </div>
   );
 }
