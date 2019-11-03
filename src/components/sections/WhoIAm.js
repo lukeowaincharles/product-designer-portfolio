@@ -13,7 +13,7 @@ export default class WhoIAm extends React.Component {
     const articleList = articles.map((item, index) => {
       return (
         <div className="article-teaser" key={index}>
-          <p>{item.description}</p>
+          <p className="text-size-20">{item.description}</p>
           <a href={item.link} target="_blank" rel="noopener noreferrer">Read article</a>
         </div>
       )
