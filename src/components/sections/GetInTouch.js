@@ -7,13 +7,13 @@ export default class WhoIAm extends React.Component {
     const contactDetails = [
       {id: 1, class: 'email', link: 'mailto:lizhamburger@gmail.com', description: 'lizhamburger@gmail.com'},
       {id: 2, class: 'phone', link: 'tel:+447969324882', description: '+44 (0) 7 969 324 882'},
-      {id: 3, class: 'linkedin', link: 'https://www.linkedin.com/in/elizabeth-hamburger/', description: 'Liz Hamburger'},
+      {id: 3, class: 'linkedin', link: 'https://www.linkedin.com/in/elizabeth-hamburger/', description: 'Liz Hamburger', target:'_blank', rel: 'noopener noreferrer'},
     ];
 
     const contactList = contactDetails.map((item, index) => {
       return (
         <li className={`list-item list-item--contact ${item.class}`} key={index}>
-          <a href={item.link} target="_blank" rel="noopener noreferrer">{item.description}</a>
+          <a href={item.link} target={item.target} rel={item.rel}>{item.description}</a>
         </li>
       )
     });
