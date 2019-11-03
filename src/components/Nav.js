@@ -138,7 +138,7 @@ export default class Nav extends React.Component {
 
     return (
       <div>
-        <div className={`hamburger-wrapper ${this.state.scrollClass}`} onScroll={this.handleScroll}>
+        <div className="hamburger-wrapper">
           <div className="container">
             <div style={styles.ham} className="hamburger" onClick={this.props.onClick ? this.props.onClick: () => {this.handleClick();}}>
               <span style={{...styles.burger,...styles.burgerTop }}></span>
@@ -146,6 +146,9 @@ export default class Nav extends React.Component {
               <span style={{...styles.burger,...styles.burgerBottom }}></span>
             </div>
           </div>
+        </div>
+        <div className={`${this.state.scrollClass}`} onScroll={this.handleScroll}>
+          <div className="hamburger-scroll-mask"></div>
         </div>
         <div style={styles.menuOverlay}>
           {this.state.open ?
