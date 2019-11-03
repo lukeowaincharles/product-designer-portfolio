@@ -77,6 +77,10 @@ ul {
   }
 }
 
+:focus {
+  outline: color(bright-pink) auto 5px;
+}
+
 .text {
   &-center {
     text-align: center;

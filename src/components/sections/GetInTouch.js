@@ -21,6 +21,7 @@ export default class WhoIAm extends React.Component {
     const styles = {
       section: {
         backgroundColor: '#FFEBF0',
+        paddingBottom: '1px',
       }
     }
 
