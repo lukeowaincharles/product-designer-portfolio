@@ -34,7 +34,7 @@ export default class WhoIAm extends React.Component {
           <div className="content-wrapper content-wrapper--white">
             <div className="row">
               <div className="col-lg-6 border--right-lg">
-                <div className="inner-wrapper">
+                <div className="inner-wrapper inner-wrapper--left">
                   <p>I love talking as much as I do writing, so don’t hesitate to get in touch.
                   <br />
                   <br />
@@ -44,7 +44,7 @@ export default class WhoIAm extends React.Component {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="inner-wrapper">
+                <div className="inner-wrapper inner-wrapper--right">
                   <ul className="contact-list">
                     {contactList}
                   </ul>
