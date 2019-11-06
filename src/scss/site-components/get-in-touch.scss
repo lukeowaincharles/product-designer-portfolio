@@ -1,0 +1,13 @@
+
+@include mq('lg') {
+  .get-in-touch {
+    .sub-title,
+    h2 {
+      text-align: center;
+    }
+
+    hr {
+      display: none;
+    }
+  }
+}

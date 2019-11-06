@@ -26,25 +26,29 @@ export default class WhoIAm extends React.Component {
     }
 
     return (
-      <section style={styles.section} name="#getInTouch" id="getInTouch">
+      <section className="get-in-touch" style={styles.section} name="#getInTouch" id="getInTouch">
         <div className="container">
           <span className="sub-title">Get in touch</span>
           <h2>Let's talk</h2>
 
           <div className="content-wrapper content-wrapper--white">
             <div className="row">
-              <div className="col-lg-6">
-                <p>I love talking as much as I do writing, so don’t hesitate to get in touch.
-                <br />
-                <br />
-                I’m open to new opportunities espeicallty those that involve helping others. Also please get in touch if you want to partner on a Triangirls event.
-                </p>
-                <hr className="hr hr--vertical-lg" />
+              <div className="col-lg-6 border--right-lg">
+                <div className="inner-wrapper">
+                  <p>I love talking as much as I do writing, so don’t hesitate to get in touch.
+                  <br />
+                  <br />
+                  I’m open to new opportunities espeicallty those that involve helping others. Also please get in touch if you want to partner on a Triangirls event.
+                  </p>
+                  <hr className="hr hr--vertical-lg" />
+                </div>
               </div>
               <div className="col-lg-6">
-                <ul className="contact-list">
-                  {contactList}
-                </ul>
+                <div className="inner-wrapper">
+                  <ul className="contact-list">
+                    {contactList}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
