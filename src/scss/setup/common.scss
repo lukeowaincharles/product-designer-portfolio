@@ -42,6 +42,18 @@ hr {
   border-color: black;
 }
 
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &--right {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+    &-lg {
+      border-right: 1px solid transparent;
+    }
+  }
+}
+
 p {
   line-height: 1.55;
 }
@@ -103,5 +115,16 @@ ul {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@include mq('lg') {
+  .border {
+    &--right {
+  
+      &-lg {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
   }
 }
