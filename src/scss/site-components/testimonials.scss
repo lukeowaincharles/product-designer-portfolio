@@ -28,6 +28,14 @@
 
     &__card {
       margin-right: 33px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 456px;
+
+      > p {
+        min-height: 270px;
+      }
     }
   }
 }
