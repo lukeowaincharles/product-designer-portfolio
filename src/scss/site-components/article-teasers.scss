@@ -16,7 +16,10 @@
 
   .article-teaser {
     margin-right: 35px;
-    min-width: 359px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 0;
 
     &:last-child {
       margin-right: 0;
