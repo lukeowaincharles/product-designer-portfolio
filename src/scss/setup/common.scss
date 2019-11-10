@@ -110,6 +110,19 @@ ul {
   }
 }
 
+@keyframes keyWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 290px;
+  }
+}
+
+.keyWidth {
+  animation: keyWidth 1s forwards;
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
@@ -127,5 +140,9 @@ ul {
         border-right: 1px solid rgba(0, 0, 0, 0.1);
       }
     }
+  }
+
+  h1 {
+    font-size: 61px;
   }
 }
