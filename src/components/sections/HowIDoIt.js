@@ -1,5 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { Controller, Scene } from 'react-scrollmagic';
+import { Tween } from 'react-gsap';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -48,7 +50,40 @@ export default class HowIDidIt extends React.Component {
                     <p>01.</p>
                     <div style={styles.titleContainer}>
                       <h2 style={styles.title}>Understand</h2>
-                      <span className="highlight highlight--long"></span>
+                      <Controller>
+                        <Scene duration={300}
+                          pin={false}
+                          reverse={false}
+                          offset={0}
+                          indicators={false}
+                          triggerElement="#svgHighlight"
+                        >
+                          {(progress, event) => {
+                            return (
+                              <Tween 
+                                from={{
+                                  css: {
+                                    width: '0',
+                                  },
+                                  ease: 'Circ.easeOutExpo',
+                                }}
+                                to={{
+                                  css: {
+                                    width: '290px',
+                                  },
+                                  ease: 'Circ.easeOutExpo',
+                                }}
+                                totalProgress={progress}
+                                paused
+                                playState={
+                                  (event.type === 'enter' && event.scrollDirection === 'FORWARD') ? 'play' :  null }
+                              >
+                                <span className="highlight highlight--long" id="svgHighlight"></span>
+                              </Tween>
+                            );
+                          }}
+                        </Scene>
+                      </Controller>
                     </div>
                   </div>
                   <div className="col-lg-8">
@@ -71,7 +106,40 @@ export default class HowIDidIt extends React.Component {
                     <div style={styles.titleContainer}>
                       <h2 style={styles.title}>Collaborate
                       </h2>
-                      <span className="highlight highlight--long"></span>
+                      <Controller>
+                        <Scene duration={300}
+                          pin={false}
+                          reverse={false}
+                          offset={0}
+                          indicators={false}
+                          triggerElement="#svgHighlight2"
+                        >
+                          {(progress, event) => {
+                            return (
+                              <Tween 
+                                from={{
+                                  css: {
+                                    width: '0',
+                                  },
+                                  ease: 'Circ.easeOutExpo',
+                                }}
+                                to={{
+                                  css: {
+                                    width: '290px',
+                                  },
+                                  ease: 'Circ.easeOutExpo',
+                                }}
+                                totalProgress={progress}
+                                paused
+                                playState={
+                                  (event.type === 'enter' && event.scrollDirection === 'FORWARD') ? 'play' :  null }
+                              >
+                                <span className="highlight highlight--long" id="svgHighlight2"></span>
+                              </Tween>
+                            );
+                          }}
+                        </Scene>
+                      </Controller>
                     </div>
                   </div>
                   <div className="col-lg-8">
@@ -96,7 +164,40 @@ export default class HowIDidIt extends React.Component {
                     <p>03.</p>
                     <div style={styles.titleContainer}>
                       <h2 style={styles.title}>Refine</h2>
-                      <span className="highlight highlight--small"></span>
+                      <Controller>
+                        <Scene duration={300}
+                          pin={false}
+                          reverse={false}
+                          offset={0}
+                          indicators={false}
+                          triggerElement="#svgHighlight3"
+                        >
+                          {(progress, event) => {
+                            return (
+                              <Tween 
+                                from={{
+                                  css: {
+                                    width: '0',
+                                  },
+                                  ease: 'Circ.easeOutExpo',
+                                }}
+                                to={{
+                                  css: {
+                                    width: '290px',
+                                  },
+                                  ease: 'Circ.easeOutExpo',
+                                }}
+                                totalProgress={progress}
+                                paused
+                                playState={
+                                  (event.type === 'enter' && event.scrollDirection === 'FORWARD') ? 'play' :  null }
+                              >
+                                <span className="highlight highlight--small" id="svgHighlight3"></span>
+                              </Tween>
+                            );
+                          }}
+                        </Scene>
+                      </Controller>
                     </div>
                   </div>
                   <div className="col-lg-8">
