@@ -1,0 +1,22 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: color(main-pink);
+}
+
+@include mq('lg') {
+  .hero {
+    height: 678px;
+
+    &__content {
+      width: 793px;
+
+      .text-size-20 {
+        width: 420px;
+      }
+    }
+  }
+}
