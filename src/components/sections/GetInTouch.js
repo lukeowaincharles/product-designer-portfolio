@@ -1,4 +1,6 @@
 import React from 'react';
+import { Controller, Scene } from 'react-scrollmagic';
+import { Tween } from 'react-gsap';
 
 export default class WhoIAm extends React.Component {
 
@@ -22,14 +24,57 @@ export default class WhoIAm extends React.Component {
       section: {
         backgroundColor: '#FFEBF0',
         paddingBottom: '1px',
-      }
+      },
+      titleContainer: {
+        position: 'relative',
+        height: '50px',
+      },
     }
 
     return (
       <section className="get-in-touch" style={styles.section} name="#getInTouch" id="getInTouch">
         <div className="container">
           <span className="sub-title">Get in touch</span>
-          <h2>Let's talk</h2>
+          <div style={styles.titleContainer}>
+            <h2>
+            Let's talk
+            <Controller>
+              <Scene duration={300}
+                pin={false}
+                reverse={false}
+                offset={-180}
+                indicators={true}
+                triggerElement="#svgHighlightContact"
+              >
+                {(progress, event) => {
+                  return (
+                    <Tween 
+                      from={{
+                        css: {
+                          width: '0',
+                        },
+                        ease: 'Circ.easeOutExpo',
+                      }}
+                      to={{
+                        css: {
+                          width: '100%',
+                        },
+                        ease: 'Circ.easeOutExpo',
+                      }}
+                      totalProgress={progress}
+                      paused
+                      playState={
+                        (event.type === 'enter' && event.scrollDirection === 'FORWARD') ? 'play' :  null }
+                    >
+                      <span className="highlight highlight--long highlight--white" id="svgHighlightContact">
+                      </span>
+                    </Tween>
+                  );
+                }}
+              </Scene>
+            </Controller>
+            </h2>
+          </div>
 
           <div className="content-wrapper content-wrapper--white">
             <div className="row">
