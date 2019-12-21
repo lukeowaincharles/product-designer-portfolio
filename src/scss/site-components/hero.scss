@@ -5,11 +5,19 @@
   position: relative;
   height: 100vh;
   background-color: color(main-pink);
+
+  .element--absolute {
+    position: relative;
+  }
 }
 
 @include mq('lg') {
   .hero {
     height: 678px;
+
+    .element--absolute {
+      position: absolute;
+    }
 
     &__content {
       width: 793px;

@@ -35,11 +35,32 @@
   }
 }
 
+.hero__highlight {
+  display: none;
+}
+
 
 .element {
   &--absolute {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  &--centre {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+@include mq('lg') {
+  .hero__highlight {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
