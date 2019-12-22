@@ -39,7 +39,8 @@
   display: none;
 }
 
-#whoIDoItFor {
+#whoIDoItFor,
+#Testimonials {
   .element--absolute {
     position: relative;
   }
@@ -78,6 +79,16 @@
     .highlight-wrapper {
       width: 400px;
     }
+  }
+
+  #Testimonials {
+    .highlight-wrapper {
+      width: 260px;
+    }
+  }
+
+  #whoIDoItFor,
+  #Testimonials {
 
     .element--absolute {
       position: absolute;
@@ -96,6 +107,10 @@
     &--bottom {
       &-30 {
         bottom: 30px;
+      }
+
+      &-minus-10 {
+        bottom: -10px;
       }
 
       &-minus-30 {
