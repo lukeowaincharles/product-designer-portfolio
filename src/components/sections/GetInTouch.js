@@ -46,7 +46,7 @@ export default class WhoIAm extends React.Component {
                   pin={false}
                   reverse={false}
                   offset={-180}
-                  indicators={true}
+                  indicators={false}
                   triggerElement="#svgHighlightContact"
                 >
                   {(progress, event) => {
