@@ -31,6 +31,12 @@ h1 {
 a {
   text-decoration: none;
   color: color(bright-pink);
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
 }
 
 .coustard {
