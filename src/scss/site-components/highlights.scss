@@ -62,6 +62,16 @@
 @include mq('lg') {
   .highlight {
     display: block;
+
+    &-wrapper {
+      &--50 {
+        height: 50px;
+      }
+
+      &--85 {
+        height: 85px;
+      }
+    }
   }
 
   #whoIDoItFor {
@@ -83,8 +93,14 @@
     left: 0;
     width: 100%;
 
-    &--bottom-30 {
-      bottom: 30px;
+    &--bottom {
+      &-30 {
+        bottom: 30px;
+      }
+
+      &-minus-30 {
+        bottom: -30px;
+      }
     }
   }
 }
