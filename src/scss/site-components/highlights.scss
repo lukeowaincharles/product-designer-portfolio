@@ -1,6 +1,6 @@
 .highlight {
   position: relative;
-  display: block;
+  display: none;
 
   &:after {
     content: '';
@@ -39,6 +39,12 @@
   display: none;
 }
 
+#whoIDoItFor {
+  .element--absolute {
+    position: relative;
+  }
+}
+
 
 .element {
   &--absolute {
@@ -54,6 +60,20 @@
 }
 
 @include mq('lg') {
+  .highlight {
+    display: block;
+  }
+
+  #whoIDoItFor {
+    .highlight-wrapper {
+      width: 400px;
+    }
+
+    .element--absolute {
+      position: absolute;
+    }
+  }
+
   .hero__highlight {
     display: block;
     position: absolute;
@@ -62,5 +82,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
+
+    &--bottom-30 {
+      bottom: 30px;
+    }
   }
 }
