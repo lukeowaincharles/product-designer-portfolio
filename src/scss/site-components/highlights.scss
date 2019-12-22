@@ -40,7 +40,8 @@
 }
 
 #whoIDoItFor,
-#Testimonials {
+#Testimonials,
+#whoIAm {
   .element--absolute {
     position: relative;
   }
@@ -81,14 +82,16 @@
     }
   }
 
-  #Testimonials {
+  #Testimonials,
+  #whoIAm {
     .highlight-wrapper {
       width: 260px;
     }
   }
 
   #whoIDoItFor,
-  #Testimonials {
+  #Testimonials,
+  #whoIAm {
 
     .element--absolute {
       position: absolute;
