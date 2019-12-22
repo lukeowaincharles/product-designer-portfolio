@@ -1,0 +1,148 @@
+body {
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  font-family: $body-font;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: color(bright-pink);
+}
+
+.coustard {
+  font-family: $title-font;
+}
+
+hr {
+  opacity: 0.1;
+  width: 100%;
+  border-color: black;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &--right {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+    &-lg {
+      border-right: 1px solid transparent;
+    }
+  }
+}
+
+p {
+  line-height: 1.55;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+// override BS 15px container
+.container {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.content-wrapper {
+  padding: 24px;
+  &--white {
+    background-color: white;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+:focus {
+  outline: color(bright-pink) auto 5px;
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-size-14 {
+    font-size: 14px;
+  }
+
+  &-size-20 {
+    font-size: 20px;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes keyWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 290px;
+  }
+}
+
+.keyWidth {
+  animation: keyWidth 1s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@include mq('lg') {
+  .border {
+    &--right {
+  
+      &-lg {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  h1 {
+    font-size: 61px;
+  }
+}

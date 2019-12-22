@@ -1,0 +1,46 @@
+.slick-dots {
+  bottom: -50px;
+
+  li {
+    margin: 0;
+    button {
+      &:before {
+        color: color(main-pink-darker);
+        opacity: 1;
+        font-size: 8px;
+      }
+    }
+  }
+
+  li.slick-active {
+    button {
+      &:before {
+        color: color(bright-pink);
+      }
+    }
+  }
+}
+
+.testimonials {
+  .slick-dots {
+  
+    li {
+      margin: 0;
+      button {
+        &:before {
+          color: black;
+          opacity: 1;
+          font-size: 8px;
+        }
+      }
+    }
+  
+    li.slick-active {
+      button {
+        &:before {
+          color: color(bright-pink);
+        }
+      }
+    }
+  }
+}

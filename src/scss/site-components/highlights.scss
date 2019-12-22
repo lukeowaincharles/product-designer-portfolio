@@ -1,0 +1,124 @@
+.highlight {
+  position: relative;
+  display: none;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -58px;
+    left: 0;
+    height: 50px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-image: url('../../assets/images/highlight1.svg');
+  }
+  
+  &--long {
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &--small {
+    &:after {
+      width: 60%;
+      bottom: -55px;
+    }
+  }
+
+  &--white {
+    &:after {
+      background-image: url('../../assets/images/highlight--white1.svg');
+    }
+  }
+}
+
+.hero__highlight {
+  display: none;
+}
+
+#whoIDoItFor,
+#Testimonials,
+#whoIAm,
+#getInTouch {
+  .element--absolute {
+    position: relative;
+  }
+}
+
+
+.element {
+  &--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &--centre {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+@include mq('lg') {
+  .highlight {
+    display: block;
+
+    &-wrapper {
+      &--50 {
+        height: 50px;
+      }
+
+      &--85 {
+        height: 85px;
+      }
+    }
+  }
+
+  #whoIDoItFor {
+    .highlight-wrapper {
+      width: 400px;
+    }
+  }
+
+  #Testimonials,
+  #whoIAm {
+    .highlight-wrapper {
+      width: 260px;
+    }
+  }
+
+  #whoIDoItFor,
+  #Testimonials,
+  #whoIAm {
+    .element--absolute {
+      position: absolute;
+    }
+  }
+
+  .hero__highlight {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    &--bottom {
+      &-30 {
+        bottom: 30px;
+      }
+
+      &-minus-10 {
+        bottom: -10px;
+      }
+
+      &-minus-30 {
+        bottom: -30px;
+      }
+    }
+  }
+}

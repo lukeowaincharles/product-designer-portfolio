@@ -1,0 +1,31 @@
+// Colors - site specific declaration
+$site-colors: (
+  main-pink: #FFEBF0,
+  main-pink-darker: #FFDEE6,
+  bright-pink: #FF2C9E,
+  black: #000000,
+  white: #ffffff,
+  gray: (
+    f8: #f8f8f8,
+  ),
+  success: purple,
+  warning: red,
+  secondary: #000000
+);
+$colors: () !default;
+$colors: map-merge($colors, $site-colors);
+
+/* Fonts */
+$title-font: 'Coustard', serif;
+$body-font: 'Karla', sans-serif;
+
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1550px
+);
+
+// z-indexes
