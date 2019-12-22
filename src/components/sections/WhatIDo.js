@@ -50,7 +50,7 @@ export default class WhatIDo extends React.Component {
                 Making products and services better 
                 <span className="highlight-wrapper" style={{...styles.titleContainer,...styles.width296}}>
                 <Controller>
-                  <Scene duration={100}
+                  <Scene duration={300}
                     pin={false}
                     reverse={false}
                     offset={-250}

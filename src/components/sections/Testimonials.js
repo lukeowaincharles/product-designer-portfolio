@@ -60,7 +60,7 @@ export default class Testimonials extends React.Component {
             <h2>Don't just take my 
               <span className="highlight-wrapper highlight-wrapper--50" style={styles.titleContainer}>
               <Controller>
-                  <Scene duration={100}
+                  <Scene duration={300}
                     pin={false}
                     reverse={false}
                     offset={-250}
