@@ -26,6 +26,10 @@
 @include mq('lg') {
   .testimonials {
 
+    &-content {
+      width: 450px;
+    }
+
     &__card {
       margin-right: 33px;
       display: flex;

@@ -53,8 +53,10 @@ export default class Testimonials extends React.Component {
     return (
       <section className="testimonials" style={styles.section} name="#Testimonials" id="Testimonials">
         <div className="container">
-          <span className="sub-title">Testimonials</span>
-          <h2>Don't just take my word for it.</h2>
+          <div className="testimonials-content">
+            <span className="sub-title">Testimonials</span>
+            <h2>Don't just take my word for it.</h2>
+          </div>
           <Slider {...settings}>
             <div>
               <div className="testimonials__card" style={styles.sliderContainer}>
