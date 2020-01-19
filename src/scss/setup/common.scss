@@ -87,6 +87,37 @@ ul {
   }
 }
 
+a.link-wrapper {
+  p {
+    color: black;
+
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  span {
+    color: color(bright-pink);
+    transition: color 300ms ease-in-out;
+  }
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+
+    span {
+      color: black;
+      text-decoration: underline;
+    }
+
+    p {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
 :focus {
   outline: color(bright-pink) auto 5px;
 }

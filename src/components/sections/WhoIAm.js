@@ -23,10 +23,12 @@ export default class WhoIAm extends React.Component {
 
     const articleList = articles.map((item, index) => {
       return (
-        <div className="article-teaser" key={index}>
-          <p className="text-size-20">{item.description}</p>
-          <a href={item.link} target="_blank" rel="noopener noreferrer">Read article</a>
-        </div>
+        <React.Fragment key={index}>
+          <a href={item.link} className="link-wrapper article-teaser" target="_blank" rel="noopener noreferrer">
+            <p className="text-size-20">{item.description}</p>
+            <span>Read article</span>
+          </a>
+        </React.Fragment>
       )
     });
 
