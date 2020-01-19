@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/product-designer-portfolio/static/css/main.721f7eef.chunk.css",
-    "main.js": "/product-designer-portfolio/static/js/main.6bb2b5b3.chunk.js",
-    "main.js.map": "/product-designer-portfolio/static/js/main.6bb2b5b3.chunk.js.map",
+    "main.css": "/product-designer-portfolio/static/css/main.c07891cf.chunk.css",
+    "main.js": "/product-designer-portfolio/static/js/main.5cb65f4c.chunk.js",
+    "main.js.map": "/product-designer-portfolio/static/js/main.5cb65f4c.chunk.js.map",
     "runtime-main.js": "/product-designer-portfolio/static/js/runtime-main.7aa8054d.js",
     "runtime-main.js.map": "/product-designer-portfolio/static/js/runtime-main.7aa8054d.js.map",
     "static/css/2.51490031.chunk.css": "/product-designer-portfolio/static/css/2.51490031.chunk.css",
-    "static/js/2.05251059.chunk.js": "/product-designer-portfolio/static/js/2.05251059.chunk.js",
-    "static/js/2.05251059.chunk.js.map": "/product-designer-portfolio/static/js/2.05251059.chunk.js.map",
+    "static/js/2.628f9780.chunk.js": "/product-designer-portfolio/static/js/2.628f9780.chunk.js",
+    "static/js/2.628f9780.chunk.js.map": "/product-designer-portfolio/static/js/2.628f9780.chunk.js.map",
     "index.html": "/product-designer-portfolio/index.html",
-    "precache-manifest.6a0ec98d47e7765e206b8f91bc59a78d.js": "/product-designer-portfolio/precache-manifest.6a0ec98d47e7765e206b8f91bc59a78d.js",
+    "precache-manifest.8e4571ba6748f0771771b5794e39bd26.js": "/product-designer-portfolio/precache-manifest.8e4571ba6748f0771771b5794e39bd26.js",
     "service-worker.js": "/product-designer-portfolio/service-worker.js",
     "static/css/2.51490031.chunk.css.map": "/product-designer-portfolio/static/css/2.51490031.chunk.css.map",
-    "static/css/main.721f7eef.chunk.css.map": "/product-designer-portfolio/static/css/main.721f7eef.chunk.css.map",
-    "static/js/2.05251059.chunk.js.LICENSE": "/product-designer-portfolio/static/js/2.05251059.chunk.js.LICENSE",
+    "static/css/main.c07891cf.chunk.css.map": "/product-designer-portfolio/static/css/main.c07891cf.chunk.css.map",
+    "static/js/2.628f9780.chunk.js.LICENSE": "/product-designer-portfolio/static/js/2.628f9780.chunk.js.LICENSE",
     "static/media/App.scss": "/product-designer-portfolio/static/media/phone.88daec1c.svg",
     "static/media/barclays.svg": "/product-designer-portfolio/static/media/barclays.918e382f.svg",
     "static/media/equiniti.svg": "/product-designer-portfolio/static/media/equiniti.9e1cc8c3.svg",
@@ -32,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.7aa8054d.js",
     "static/css/2.51490031.chunk.css",
-    "static/js/2.05251059.chunk.js",
-    "static/css/main.721f7eef.chunk.css",
-    "static/js/main.6bb2b5b3.chunk.js"
+    "static/js/2.628f9780.chunk.js",
+    "static/css/main.c07891cf.chunk.css",
+    "static/js/main.5cb65f4c.chunk.js"
   ]
 }
