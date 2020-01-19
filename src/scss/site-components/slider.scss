@@ -3,11 +3,20 @@
 
   li {
     margin: 0;
+    width: 48px;
+    height: 48px;
+    
     button {
+      width: 48px;
+      height: 48px;
+
       &:before {
         color: color(main-pink-darker);
         opacity: 1;
-        font-size: 8px;
+        font-size: 20px;
+        line-height: 48px;
+        width: 48px;
+        height: 48px;
       }
     }
   }
@@ -27,10 +36,16 @@
     li {
       margin: 0;
       button {
+        width: 48px;
+        height: 48px;
+
         &:before {
           color: black;
           opacity: 1;
-          font-size: 8px;
+          font-size: 20px;
+          line-height: 48px;
+          width: 48px;
+          height: 48px;
         }
       }
     }
