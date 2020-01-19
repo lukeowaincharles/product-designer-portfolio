@@ -21,7 +21,7 @@ export default class Testimonials extends React.Component {
       dots: false,
       responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 1200,
           settings: {
             dots: true,
             slidesToShow: 1,
