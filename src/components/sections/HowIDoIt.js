@@ -15,6 +15,14 @@ export default class HowIDidIt extends React.Component {
       initialSlide: 0,
       slidesToShow: 1,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: false
+          }
+        }
+      ]
     };
 
     const styles = {
