@@ -15,6 +15,14 @@ export default class HowIDidIt extends React.Component {
       initialSlide: 0,
       slidesToShow: 1,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: false
+          }
+        }
+      ]
     };
 
     const styles = {
@@ -45,7 +53,7 @@ export default class HowIDidIt extends React.Component {
           <span className="sub-title sub-title--pink">How I do it</span>
           <Slider {...settings}>
             <div>
-              <div style={styles.sliderContainer}>
+              <div style={styles.sliderContainer} className="desktop-height__434">
                 <div className="row">
                   <div className="col-lg-4">
                     <p>01.</p>
@@ -67,7 +75,7 @@ export default class HowIDidIt extends React.Component {
               </div>
             </div>
             <div>
-              <div style={styles.sliderContainer}>
+              <div style={styles.sliderContainer} className="desktop-height__434">
                 <div className="row">
                   <div className="col-lg-4">
                     <p>02.</p>
@@ -93,7 +101,7 @@ export default class HowIDidIt extends React.Component {
               </div>
             </div>
             <div>
-              <div style={styles.sliderContainer}>
+              <div style={styles.sliderContainer} className="desktop-height__434">
                 <div className="row">
                   <div className="col-lg-4">
                     <p>03.</p>
