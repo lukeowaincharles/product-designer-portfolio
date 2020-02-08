@@ -3,20 +3,20 @@
 
   li {
     margin: 0;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
 
     button {
-      width: 36px;
-      height: 36px;
+      width: 30px;
+      height: 30px;
 
       &:before {
         color: color(main-pink-darker);
         opacity: 1;
         font-size: 20px;
-        line-height: 36px;
-        width: 36px;
-        height: 36px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
       }
     }
   }
@@ -36,16 +36,16 @@
     li {
       margin: 0;
       button {
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
 
         &:before {
           color: black;
           opacity: 1;
           font-size: 20px;
-          line-height: 36px;
-          width: 36px;
-          height: 36px;
+          line-height: 30px;
+          width: 30px;
+          height: 30px;
         }
       }
     }
