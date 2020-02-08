@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2e02c6c37039d6da9c26ea237fd8001",
+    "revision": "e096b5382ce541d1110e681873d045c8",
     "url": "/product-designer-portfolio/index.html"
   },
   {
-    "revision": "5fa1e4213e1672d6176e",
+    "revision": "019e0f2b15dc401c0a92",
     "url": "/product-designer-portfolio/static/css/2.51490031.chunk.css"
   },
   {
-    "revision": "62836b7bfdedb7a60936",
-    "url": "/product-designer-portfolio/static/css/main.c07891cf.chunk.css"
+    "revision": "09afd29bc956f27fd481",
+    "url": "/product-designer-portfolio/static/css/main.61a1ab4e.chunk.css"
   },
   {
-    "revision": "5fa1e4213e1672d6176e",
-    "url": "/product-designer-portfolio/static/js/2.628f9780.chunk.js"
+    "revision": "019e0f2b15dc401c0a92",
+    "url": "/product-designer-portfolio/static/js/2.a335fcef.chunk.js"
   },
   {
     "revision": "21a2a98d9df7cec5f3e2510ba837dd85",
-    "url": "/product-designer-portfolio/static/js/2.628f9780.chunk.js.LICENSE"
+    "url": "/product-designer-portfolio/static/js/2.a335fcef.chunk.js.LICENSE"
   },
   {
-    "revision": "62836b7bfdedb7a60936",
-    "url": "/product-designer-portfolio/static/js/main.5cb65f4c.chunk.js"
+    "revision": "09afd29bc956f27fd481",
+    "url": "/product-designer-portfolio/static/js/main.84ec2d9f.chunk.js"
   },
   {
     "revision": "78055bb3dd16331557c4",
