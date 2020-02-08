@@ -1,4 +1,5 @@
 import React from 'react';
+import { Event } from '../Tracking';
 
 export default class WhoIAm extends React.Component {
 
@@ -24,7 +25,13 @@ export default class WhoIAm extends React.Component {
     const articleList = articles.map((item, index) => {
       return (
         <React.Fragment key={index}>
-          <a href={item.link} className="link-wrapper article-teaser" target="_blank" rel="noopener noreferrer">
+          <a
+            onClick={() => {Event("Article", "articleLinkClicked", `${item.description}`)}}
+            href={item.link}
+            className="link-wrapper article-teaser"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <p className="text-size-20">{item.description}</p>
             <span>Read article</span>
           </a>

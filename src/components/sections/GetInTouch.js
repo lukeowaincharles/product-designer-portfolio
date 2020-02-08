@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactGA from 'react-ga';
+import { Event } from '../Tracking';
 
 export default class WhoIAm extends React.Component {
 
@@ -13,7 +15,14 @@ export default class WhoIAm extends React.Component {
     const contactList = contactDetails.map((item, index) => {
       return (
         <li className={`list-item list-item--contact ${item.class}`} key={index}>
-          <a href={item.link} target={item.target} rel={item.rel}>{item.description}</a>
+          <a
+            onClick={() => {Event("contact", "ContactLinkClicked", `${item.class}`)}}
+            href={item.link}
+            target={item.target}
+            rel={item.rel}
+          >
+            {item.description}
+          </a>
         </li>
       )
     });
@@ -70,7 +79,16 @@ export default class WhoIAm extends React.Component {
             </div>
           </div>
 
-          <p className="sub-title sub-title--pink text-center"><a href="https://www.lukeowaincharles.co.uk/" target="_blank" rel="noopener noreferrer">Site built by Luke Charles</a></p>
+          <p className="sub-title sub-title--pink text-center">
+            <ReactGA.OutboundLink 
+              eventLabel="linkToLukesSite"
+              to="https://www.lukeowaincharles.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Site built by Luke Charles
+            </ReactGA.OutboundLink>
+          </p>
         </div>  
       </section>
     )
