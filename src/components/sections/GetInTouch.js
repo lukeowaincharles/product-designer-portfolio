@@ -55,7 +55,7 @@ export default class WhoIAm extends React.Component {
                   <p>I love talking as much as I do writing, so don’t hesitate to get in touch.
                   <br />
                   <br />
-                  I’m open to new opportunities espeicallty those that involve helping others. Also please get in touch if you want to partner on a Triangirls event.
+                  I’m open to new opportunities especially those that involve helping others. Also please get in touch if you want to partner on a Triangirls event.
                   </p>
                   <hr className="hr hr--vertical-lg" />
                 </div>
