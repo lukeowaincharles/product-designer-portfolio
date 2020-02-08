@@ -80,3 +80,23 @@
 .slick-disabled {
   opacity: 0;
 }
+
+@include mq('lg') {
+  .slick-prev {
+    left: -40px;
+  }
+
+  .slick-next {
+    right: -40px;
+  }
+}
+
+@include mq('xl') {
+  .slick-prev {
+    left: -50px;
+  }
+
+  .slick-next {
+    right: -50px;
+  }
+}
