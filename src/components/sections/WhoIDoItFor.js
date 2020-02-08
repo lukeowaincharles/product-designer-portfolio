@@ -61,7 +61,7 @@ export default class WhoIDoItFor extends React.Component {
               </h2>
             </div>
             <div className="col-lg-6">
-              <p>Over the last 6 years I have worked with small start-ups, large corporate clients and nearly everyone in between.</p>
+              <p>Over the last 7 years I have worked with small start-ups, large corporate clients and nearly everyone in between.</p>
               <ul className="client-image-list">
                 {clients}
               </ul>
