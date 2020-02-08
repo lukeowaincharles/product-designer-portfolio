@@ -69,7 +69,7 @@ export default class HowIDidIt extends React.Component {
                     To gain understanding I work with clients in a variety of formats such as a week long sprint, individual workshops or I may run user research sessions depending on the problem at had.
                     <br />
                     <br />
-                    By identifying opportunities this way, I'm able to understanding the implications of the business needs as well as the users needs, ultimately enabling me to create a holistic as well as realistic design solution.</p>
+                    By identifying opportunities this way, I'm able to understanding the implications of the business needs as well as the users needs, ultimately enabling me to create a holistic design solutions.</p>
                   </div>
                 </div>
               </div>
