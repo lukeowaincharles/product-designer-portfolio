@@ -89,13 +89,13 @@ export default class HowIDidIt extends React.Component {
                     <p>I believe that everyone can have brilliant ideas and you don't have to be a designer to suggest a great solution.
                     <br />
                     <br />
-                    This principle means that I enjoy working collaboratively my clients and my team to help facilitate idea generation but also to keep communication open as possible.
+                    This principle means that I enjoy working collaboratively with my clients and team to help facilitate idea generation but also to keep communication open as possible.
                     <br />
                     <br />
-                    By co-creating so closely with clients, as a group we're able to draw on everyones experience and talents to build a solution that everyone, especially the user is happy with.
+                    By co-creating so closely with clients, we're able to draw on everyones experience and talents to build a solution that everyone, especially the user is happy with.
                     <br />
                     <br />
-                    Once opportunities have been established and a direction set I get to work on generating wireframes and prototypes quickly as possible so that we can test and improve solutions.</p>
+                    Once opportunities have been established and a direction set I get to work on generating wireframes and prototypes quickly so that we can test and improve solutions.</p>
                   </div>  
                 </div>
               </div>
