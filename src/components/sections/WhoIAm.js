@@ -62,10 +62,10 @@ export default class WhoIAm extends React.Component {
               <p>Formally trained as a Graphic Designer, I switched to web design in 2015. After having tonnes of fun designing marketing and portfolio sites, I landed my first role working as a Digital Product Designer for Barclays through We Are Why. Since then I have never looked back and have gone on to work with companies mainly in the Finance and Legal sector.
               <br />
               <br />
-              Supporting others incredibly important to me. For this reason I’ve recently joined the <a href="https://www.triangirls.com/" target="_blank" rel="noopener noreferrer">Triangirls</a> team to help organise events and workshops to help women in tech.
+              Supporting others incredibly important to me. For this reason I’ve recently joined the <a href="https://www.triangirls.com/" target="_blank" rel="noopener noreferrer">Triangirls</a> team to help organise events and workshops to help womxn in tech.
               <br />
               <br />
-              I'm a keen writer about Design, but I also write about Leadership and Self Improvement. I'm currently featured as one of <a href="https://medium.com/tag/design/top-writers" target="_blank" rel="noopener noreferrer">Mediums Top 50 Writers in Design</a>.
+              I'm a keen writer about Design, I also write about Leadership and Self Improvement.
               </p>
             </div>
           </div>

@@ -169,6 +169,16 @@ a.link-wrapper {
   }
 }
 
+.desktop-height__434 {
+  min-height: 753px;
+}
+
+@include mq('md') {
+  .desktop-height__434 {
+    min-height: 537px;
+  }
+}
+
 @include mq('lg') {
   .border {
     &--right {

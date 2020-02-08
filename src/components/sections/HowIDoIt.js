@@ -69,7 +69,7 @@ export default class HowIDidIt extends React.Component {
                     To gain understanding I work with clients in a variety of formats such as a week long sprint, individual workshops or I may run user research sessions depending on the problem at had.
                     <br />
                     <br />
-                    By identifying opportunities this way, I'm able to understanding the implications of the business needs as well as the users needs, ultimately enabling me to create a holistic as well as realistic design solution.</p>
+                    By identifying opportunities this way, I'm able to understanding the implications of the business needs as well as the users needs, ultimately enabling me to create a holistic design solutions.</p>
                   </div>
                 </div>
               </div>
@@ -89,13 +89,13 @@ export default class HowIDidIt extends React.Component {
                     <p>I believe that everyone can have brilliant ideas and you don't have to be a designer to suggest a great solution.
                     <br />
                     <br />
-                    This principle means that I enjoy working collaboratively my clients and my team to help facilitate idea generation but also to keep communication open as possible.
+                    This principle means that I enjoy working collaboratively with my clients and team to help facilitate idea generation but also to keep communication open as possible.
                     <br />
                     <br />
-                    By co-creating so closely with clients, as a group we're able to draw on everyones experience and talents to build a solution that everyone, especially the user is happy with.
+                    By co-creating so closely with clients, we're able to draw on everyones experience and talents to build a solution that everyone, especially the user is happy with.
                     <br />
                     <br />
-                    Once opportunities have been established and a direction set I get to work on generating wireframes and prototypes quickly as possible so that we can test and improve solutions.</p>
+                    Once opportunities have been established and a direction set I get to work on generating wireframes and prototypes quickly so that we can test and improve solutions.</p>
                   </div>  
                 </div>
               </div>
@@ -114,10 +114,10 @@ export default class HowIDidIt extends React.Component {
                     <p>The beauty of Digital Design is that it is never done.
                     <br />
                     <br />
-                    The most exciting time of a Digital Products life cycle is when it launched, at this stage is when I again work with the client to establish what we want to find out during the user testing phase.
+                    The most exciting time of a Digital Products life cycle is when it launched. But before that testing is critical before releasing it into the wild. During the testing stage I work with the client to establish what metrics we're testing, and what we're really trying to find out during our test.
                     <br />
                     <br />
-                    This may be my favourite part, talking with users, gaining real insights into their thoughts and feelings about the product or service we've created and how we can make further improvements.</p>
+                    This may be my favourite part, talking with users, gaining real insights into their thoughts and feelings about the product we've created and how we can make further improvements.</p>
                   </div>
                 </div>
               </div>

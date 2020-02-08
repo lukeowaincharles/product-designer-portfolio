@@ -23,6 +23,15 @@
   }
 }
 
+@include mq('md') {
+  .testimonials {
+
+    &__card {
+      min-height: 311px;
+    }
+  }
+}
+
 @include mq('lg') {
   .testimonials {
 
