@@ -114,10 +114,10 @@ export default class HowIDidIt extends React.Component {
                     <p>The beauty of Digital Design is that it is never done.
                     <br />
                     <br />
-                    The most exciting time of a Digital Products life cycle is when it launched, at this stage is when I again work with the client to establish what we want to find out during the user testing phase.
+                    The most exciting time of a Digital Products life cycle is when it launched. But before that testing is critical before releasing it into the wild. During the testing stage I work with the client to establish what metrics we're testing, and what we're really trying to find out during our test.
                     <br />
                     <br />
-                    This may be my favourite part, talking with users, gaining real insights into their thoughts and feelings about the product or service we've created and how we can make further improvements.</p>
+                    This may be my favourite part, talking with users, gaining real insights into their thoughts and feelings about the product we've created and how we can make further improvements.</p>
                   </div>
                 </div>
               </div>
