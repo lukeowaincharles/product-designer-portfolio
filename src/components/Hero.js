@@ -43,7 +43,7 @@ export default class Hero extends React.Component {
                   </span>
                 </span>
               </h1>
-              <p className="text-size-20">I'm Liz, a London based Lead Digital Product Designer at Inktrap.</p>
+              <p className="text-size-20">I'm Liz, a London based Digital Product Designer at Inktrap.</p>
             </div>
             <Link className="button-scroll" to="#whatIDo" spy={true} smooth={true} duration={800} aria-label="Scroll to what I do"></Link>
           </div>
