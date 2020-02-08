@@ -5,10 +5,10 @@ export default class WhatIDo extends React.Component {
   render() {
 
     const skills = [
-      {id: 1, name: 'Idea Workshops'},
+      {id: 1, name: 'Workshops'},
       {id: 2, name: 'Design Sprints'},
       {id: 3, name: 'User Research'},
-      {id: 4, name: 'Ux Design'},
+      {id: 4, name: 'UX Design'},
       {id: 5, name: 'Rapid Prototyping'},
       {id: 6, name: 'UI Design'},
       {id: 7, name: 'Mentoring'},
@@ -57,10 +57,10 @@ export default class WhatIDo extends React.Component {
                 </h2>
             </div>
             <div className="col-lg-6">
-              <p>Whether that's a client looking to improve their already existing user experience or helping a user live better day to day when using technology.
+              <p>Whether that's a client looking to improve their already existing user experience or helping a user live better day to day with digital products.
               <br />
               <br />
-              Creating meaningful experiences is at the core of what I do and my love for helping people doesn't stop there. I am passionate in helping other designers find their own way in their career and having their voices heard.
+              Creating meaningful experiences is at the core of what I do and my love for helping people doesn't stop there. I am passionate in helping other designers finding their way in their career and ensuring their voices are heard.
               </p>
               <p>Skills</p>
               <ul>
