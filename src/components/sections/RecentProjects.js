@@ -41,19 +41,19 @@ function RecentProjects() {
     {
       title: "TRX",
       text:
-        "A TV Rights Exchange Platform, bringing buyers and sellers together like never before",
+        "A TV Rights Exchange Platform, bringing buyers and sellers together like never before.",
       image: TRXIMAGE,
     },
     {
       title: "Humn",
       text:
-        "Driving insurance into the future by resetting insurance for ride-hailing drivers and fleets",
+        "Driving insurance into the future by resetting insurance for ride-hailing drivers and fleets.",
       image: HUMNIMAGE,
     },
     {
       title: "GPS",
       text:
-        "Brining clarity to finances within estates to create organisation and peace of mind",
+        "Brining clarity to finances within estates to create organisation and peace of mind.",
       image: GPSIMAGE,
     },
   ];
