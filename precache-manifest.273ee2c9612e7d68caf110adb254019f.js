@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f3efd355d8aeccc027cb8d9e3430f65f",
+    "revision": "06e6bd8ad0841c5e6c56549d5f8c68c3",
     "url": "/index.html"
   },
   {
-    "revision": "946a11a53e45c8cea53a",
+    "revision": "d7a05a0d6390301e7579",
     "url": "/static/css/2.234785c6.chunk.css"
   },
   {
-    "revision": "2ec7b638452916f0a83f",
-    "url": "/static/css/main.9a032390.chunk.css"
+    "revision": "a86c2c07366300bd9bc8",
+    "url": "/static/css/main.f55dc199.chunk.css"
   },
   {
-    "revision": "946a11a53e45c8cea53a",
-    "url": "/static/js/2.a335fcef.chunk.js"
+    "revision": "d7a05a0d6390301e7579",
+    "url": "/static/js/2.5045b820.chunk.js"
   },
   {
     "revision": "21a2a98d9df7cec5f3e2510ba837dd85",
-    "url": "/static/js/2.a335fcef.chunk.js.LICENSE"
+    "url": "/static/js/2.5045b820.chunk.js.LICENSE"
   },
   {
-    "revision": "2ec7b638452916f0a83f",
-    "url": "/static/js/main.0a73e3c2.chunk.js"
+    "revision": "a86c2c07366300bd9bc8",
+    "url": "/static/js/main.8f9f2bf2.chunk.js"
   },
   {
     "revision": "d266ead81eccd7720818",
@@ -64,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fairtrade.eb2b5796.svg"
   },
   {
+    "revision": "9ed72c9ec0ee25bb5967f8110d4e19ec",
+    "url": "/static/media/gps-project.9ed72c9e.png"
+  },
+  {
     "revision": "688d49b42a22d345accfd4751cd4c3c5",
     "url": "/static/media/gps.688d49b4.svg"
   },
@@ -74,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9b959ff6f586c06fd0279df4cd39b4e5",
     "url": "/static/media/highlight1.9b959ff6.svg"
+  },
+  {
+    "revision": "b385bedf9e08762a9b4287b75931f772",
+    "url": "/static/media/humn-project.b385bedf.svg"
   },
   {
     "revision": "2c1163bdf8bf343a4c9569057975cf31",
@@ -126,6 +134,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/static/media/slick.f97e3bbf.svg"
+  },
+  {
+    "revision": "28fb876b3218eb679430b6750c8185b1",
+    "url": "/static/media/trx-project.28fb876b.svg"
   },
   {
     "revision": "9b28724e330aa932b8b89629c21e924c",
