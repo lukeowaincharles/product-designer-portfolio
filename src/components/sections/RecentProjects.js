@@ -53,7 +53,7 @@ function RecentProjects() {
     {
       title: "GPS",
       text:
-        "Brining clarity to finances within estates to create organisation and peace of mind.",
+        "Bringing clarity to finances within estates to create organisation and peace of mind.",
       image: GPSIMAGE,
     },
   ];
