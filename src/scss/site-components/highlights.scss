@@ -42,9 +42,16 @@
 #whoIDoItFor,
 #Testimonials,
 #whoIAm,
-#getInTouch {
+#getInTouch,
+#whatIDo {
   .element--absolute {
     position: relative;
+  }
+}
+
+#whatIDo {
+  .highlight-wrapper {
+    display: block;
   }
 }
 
@@ -90,9 +97,16 @@
     }
   }
 
+  #whatIDo {
+    .highlight-wrapper {
+      display: inline-block;
+    }
+  }
+
   #whoIDoItFor,
   #Testimonials,
-  #whoIAm {
+  #whoIAm,
+  #whatIDo {
     .element--absolute {
       position: absolute;
     }

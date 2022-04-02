@@ -17,7 +17,6 @@ export default class WhatIDo extends React.Component {
 
     const styles = {
       titleContainer: {
-        display: 'inline-block',
         position: 'relative',
         height: '85px'
       },

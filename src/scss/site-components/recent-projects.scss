@@ -1,0 +1,14 @@
+.recent-projects {
+  .sub-title {
+    margin-bottom: 40px;
+  }
+}
+
+@include mq('lg') {
+  .recent-projects {
+    &__card {
+      margin-right: 33px;
+      min-height: 462px;
+    }
+  }
+}

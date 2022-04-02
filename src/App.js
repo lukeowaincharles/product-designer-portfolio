@@ -8,6 +8,7 @@ import './App.scss';
 import Testimonials from './components/sections/Testimonials';
 import WhoIAm from './components/sections/WhoIAm';
 import GetInTouch from './components/sections/GetInTouch';
+import RecentProjects from './components/sections/RecentProjects';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Nav />
       <Hero />
       <WhatIDo />
+      <RecentProjects />
       <HowIDoIt />
       <WhoIDoItFor />
       <Testimonials />
