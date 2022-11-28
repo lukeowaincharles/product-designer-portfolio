@@ -16,16 +16,26 @@ $colors: () !default;
 $colors: map-merge($colors, $site-colors);
 
 /* Fonts */
-$title-font: 'Coustard', serif;
-$body-font: 'Karla', sans-serif;
+$title-font: 'DM Sans', sans-serif;
+$body-font: 'DM Sans', sans-serif;
 
-$breakpoints: (
-  'xs': 0,
-  'sm': 576px,
-  'md': 768px,
-  'lg': 992px,
-  'xl': 1200px,
-  'xxl': 1550px
+// Font sizes
+$font-h1: 2rem; //32px
+$font-h1--desktop: 2.5rem; // 40px
+$font-h2: 1.25rem; // 20px
+$font-h2--desktop: 1.5rem; // 24px
+
+$font-text-lg: 1.875rem; // 30px
+
+// grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xlg: 1550px
 );
 
 // z-indexes

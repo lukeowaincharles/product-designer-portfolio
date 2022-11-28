@@ -1,84 +1,38 @@
-.list-item {
-  padding-left: 15px;
-  position: relative;
-  font-size: 14px;
-  padding-bottom: 10px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
-    background-color: color(bright-pink);
-  }
-
-  &--contact {
-    padding: 11px 0 20px 45px;
-    font-size: 18px;
-
-    a {
-      color: black;
-    }
-
-    &:before {
-      width: 32px;
-      height: 32px;
-      border-radius: 32px;
-    }
-
-    &.email {
-      &:before {
-        background-image: url('../../assets/images/email.svg');
-        background-size: 55%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    }
-
-    &.phone {
-      &:before {
-        background-image: url('../../assets/images/phone.svg');
-        background-size: 60%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    }
-
-    &.linkedin {
-      &:before {
-        background-image: url('../../assets/images/linkedin.svg');
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    }
-  }
-}
-
 .client-image-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
+  max-width: 600px;
+  
+  &__item {
+    flex-grow: 1;
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
 
-  li {
-    width: 50%;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
-.contact-list {
-  margin: 0;
+#client__attest {
+  img {
+    max-width: 61px;
+  }
 }
 
-@include mq('lg') {
-  .client-image-list {
-  
-    li {
-      width: 22%;
-    }
+#client__thriva {
+  img {
+    max-width: 95px;
+  }
+}
+
+#client__rideshur {
+  img {
+    margin-bottom: 6px;
   }
 }

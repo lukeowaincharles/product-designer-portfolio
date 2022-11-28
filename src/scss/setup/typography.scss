@@ -1,16 +1,45 @@
-.sub-title {
-  display: block;
-  font-size: 14px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+}
+
+h1,
+.h1 {
+  font-size: $font-h1;
+  font-weight: 400;
+  margin: 24px 0;
+}
+
+h2,
+.h2 {
+  font-size: $font-h2;
   font-weight: 700;
-  margin-bottom: 24px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  
+  margin: 16px 0;
+}
+
+.text {
   &--pink {
     color: color(bright-pink);
   }
 }
 
-h2 {
-  font-size: 40px;
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size: $font-h1--desktop;
+  }
+
+  h2,
+  .h2 {
+    font-size: $font-h2--desktop;
+  }
+
+  .text {
+    &--title {
+      font-size: $font-text-lg;
+    }
+  }
 }

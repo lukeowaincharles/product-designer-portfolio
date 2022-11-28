@@ -7,18 +7,14 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^5.2.3",
     "gh-pages": "^2.1.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^2.6.0",
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
-    "react-gsap": "^1.2.0",
     "react-scripts": "3.4.1",
-    "react-scroll": "^1.7.14",
-    "react-scrollmagic": "^2.1.1",
-    "react-slick": "^0.25.2",
-    "sass": "^1.49.11",
-    "slick-carousel": "^1.8.1"
+    "sass": "^1.49.11"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -39,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-image-webp": "^0.8.0"
   }
 }
