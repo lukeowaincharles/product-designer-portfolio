@@ -1,4 +1,3 @@
-import List from "@/components/utils/list/list";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import { SliceComponentProps } from "@prismicio/react";
