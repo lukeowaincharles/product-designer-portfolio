@@ -1,0 +1,40 @@
+{
+  "id": "hero_homepage",
+  "type": "SharedSlice",
+  "name": "HeroHomepage",
+  "description": "HeroHomepage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": { "label": "eyebrow", "placeholder": "" }
+        },
+        "hero_image": {
+          "type": "Image",
+          "config": {
+            "label": "hero image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": { "label": "title", "placeholder": "" }
+        }
+      },
+      "items": {
+        "badges": {
+          "type": "Text",
+          "config": { "label": "badges", "placeholder": "" }
+        }
+      }
+    }
+  ]
+}
