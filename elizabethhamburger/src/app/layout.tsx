@@ -13,13 +13,14 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="any"
-          href="https://prismic.io/favicon.ico"
+          href="../public/favicon.ico"
         />
       </head>
       <body>
         {children}
         <PrismicPreview repositoryName={repositoryName} />
       </body>
+      <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=elizabethhamburger"></script>
     </html>
   );
 }
