@@ -81,7 +81,7 @@ export type HomepageDocument<Lang extends string = string> =
     Lang
   >;
 
-type PageDocumentDataSlicesSlice = RichTextSlice;
+type PageDocumentDataSlicesSlice = RichTextSlice | HeroHomepageSlice;
 
 /**
  * Content for Page documents
