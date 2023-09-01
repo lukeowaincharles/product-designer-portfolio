@@ -1,5 +1,7 @@
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
+import styles from "./index.module.css";
+import Header from "@/components/header";
 
 export default function RootLayout({
   children,
@@ -16,7 +18,8 @@ export default function RootLayout({
           href="../public/favicon.ico"
         />
       </head>
-      <body>
+      <body className={styles.body}>
+        <Header />
         {children}
         <PrismicPreview repositoryName={repositoryName} />
       </body>

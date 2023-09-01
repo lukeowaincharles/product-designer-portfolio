@@ -161,16 +161,6 @@ export type AllDocumentTypes = HomepageDocument | PageDocument;
  */
 export interface HeroHomepageSliceDefaultPrimary {
   /**
-   * eyebrow field in *HeroHomepage → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: hero_homepage.primary.eyebrow
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  eyebrow: prismic.KeyTextField;
-
-  /**
    * hero image field in *HeroHomepage → Primary*
    *
    * - **Field Type**: Image
@@ -189,6 +179,16 @@ export interface HeroHomepageSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   title: prismic.KeyTextField;
+
+  /**
+   * description field in *HeroHomepage → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_homepage.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
 }
 
 /**
