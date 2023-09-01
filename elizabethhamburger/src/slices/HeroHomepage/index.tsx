@@ -1,7 +1,8 @@
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
-import { SliceComponentProps } from "@prismicio/react";
+import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import styles from "./index.module.css";
+// import List from "@/components/utils/list/list";
 
 /**
  * Props for `HeroHomepage`.
@@ -18,12 +19,18 @@ const HeroHomepage = ({ slice }: HeroHomepageProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className={styles.hero}
     >
-      {slice.primary.eyebrow}
-      <PrismicNextImage field={slice.primary.hero_image} />
-      {slice.primary.title}
+      <div className={styles.heroContent}>
+        <h1 className={styles.heroTitle}>
+          {slice.primary.title}
+        </h1>
+        <PrismicRichText field={slice.primary.description} />
+      </div>
 
       {/* <List classes="hero__badges-list" items={slice.items} /> */}
-      <ul className="hero__badges-list">
+      <div className={styles.heroImage}>
+        <PrismicNextImage field={slice.primary.hero_image} />
+      </div>
+      <ul className={styles.heroBadges}>
         {slice.items.map((item, index) => (
           <li key={index}>
             {item.badges}

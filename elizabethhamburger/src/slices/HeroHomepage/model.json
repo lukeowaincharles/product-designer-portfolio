@@ -12,10 +12,6 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "eyebrow": {
-          "type": "Text",
-          "config": { "label": "eyebrow", "placeholder": "" }
-        },
         "hero_image": {
           "type": "Image",
           "config": {
@@ -27,6 +23,15 @@
         "title": {
           "type": "Text",
           "config": { "label": "title", "placeholder": "" }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
         }
       },
       "items": {

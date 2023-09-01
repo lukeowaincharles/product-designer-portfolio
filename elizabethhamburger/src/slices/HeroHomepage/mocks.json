@@ -3,18 +3,12 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"eyebrow": {
-				"__TYPE__": "FieldContent",
-				"value": "some",
-				"type": "Text"
-			},
 			"title": {
 				"__TYPE__": "FieldContent",
 				"value": "smooth",
 				"type": "Text"
 			},
 			"hero_image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
@@ -32,7 +26,21 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum nostrud deserunt cupidatat eu."
+						}
+					}
+				]
 			}
 		},
 		"items": [
