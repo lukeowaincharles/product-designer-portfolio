@@ -7,7 +7,7 @@ function Body() {
   return (
     <section>
       <h1>{BODYDATA[0].title}</h1>
-      <p>{BODYDATA[0].bodyCopy}</p>
+      <p className="text text--off-white">{BODYDATA[0].bodyCopy}</p>
     </section>
   );
 }

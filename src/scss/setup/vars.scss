@@ -10,7 +10,10 @@ $site-colors: (
   ),
   success: purple,
   warning: red,
-  secondary: #000000
+  secondary: #000000,
+  new-red: #E22503,
+  new-pink: #FFC2FD,
+  new-off-white: #FFFAE6,
 );
 $colors: () !default;
 $colors: map-merge($colors, $site-colors);
@@ -21,7 +24,7 @@ $body-font: 'DM Sans', sans-serif;
 
 // Font sizes
 $font-h1: 2rem; //32px
-$font-h1--desktop: 2.5rem; // 40px
+$font-h1--desktop: 8rem; // 128px
 $font-h2: 1.25rem; // 20px
 $font-h2--desktop: 1.5rem; // 24px
 

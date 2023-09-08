@@ -12,6 +12,7 @@ h1,
   font-size: $font-h1;
   font-weight: 400;
   margin: 24px 0;
+  color: color(new-pink);
 }
 
 h2,
@@ -24,6 +25,10 @@ h2,
 .text {
   &--pink {
     color: color(bright-pink);
+  }
+
+  &--off-white {
+    color: color(new-off-white);
   }
 }
 

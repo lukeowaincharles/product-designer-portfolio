@@ -5,7 +5,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background: white;
+  background: color(new-red);
   font-family: $body-font;
   color: black;
 }
@@ -32,8 +32,41 @@ section {
 }
 
 header {
-  margin-top: 32px;
+  margin-top: 51px;
   padding: 0 24px;
+}
+
+.content-inner {
+  section {
+    &:last-child {
+      padding-right: 0;
+      position: relative;
+    }
+  }
+}
+
+.badges-list {
+  &__item {
+    position: absolute;
+
+    &.golf {
+      display: none;
+    }
+
+    &.motorcycle {
+      display: none;
+    }
+
+    &.senior {
+      bottom: 0;
+      left: -15px;
+    }
+
+    &.product {
+      bottom: -120px;
+      left: 30px;
+    }
+  }
 }
 
 .divider {
@@ -100,10 +133,6 @@ ul {
     flex: 0 0 auto;
   }
 
-  header {
-    margin-top: 48px;
-  }
-
   section {
     margin: 80px 0;
 
@@ -111,11 +140,128 @@ ul {
       margin: 80px 0 48px;
     }
   }
+
+  .header {
+    position: absolute;
+  }
+
+  .content-inner {
+    display: flex;
+    align-items: center;
+
+    section {
+      &:first-child {
+        flex: 1 0 50%;
+      }
+    }
+  }
+
+  .badges-list {
+    &__item {
+      &.golf {
+        display: block;
+        top: -70px;
+        right: 0;
+      }
+  
+      &.motorcycle {
+        display: block;
+        top: -80px;
+        right: 150px;
+      }
+
+      &.senior {
+        bottom: 0;
+        left: -45px;
+      }
+
+      &.product {
+        bottom: -120px;
+        left: 30px;
+      }
+    }
+  }
+}
+
+.star-wrapper {
+  .star {
+    position: absolute;
+    animation: fadeAnim 3s linear infinite;
+
+    &--0 {
+      top: 223px;
+      left: 30px;
+      animation-delay: 1s;
+      max-width: 19px;
+    }
+
+    &--1 {
+      top: 169px;
+      left: 34%;
+      max-width: 100%;
+    }
+
+    &--2 {
+      top: 20px;
+      left: 53%;
+      animation-delay: 2s;
+      max-width: 14px;
+    }
+
+    &--3 {
+      top: 150px;
+      left: 230px;
+      animation-delay: 5.2s;
+      max-width: 20px;
+    }
+
+    &--4 {
+      top: 10px;
+      left: 95%;
+      animation-delay: 3.3s;
+    }
+
+    &--5 {
+      bottom: 5%;
+      left: 2%;
+      animation-delay: 1.2s;
+    }
+
+    &--6 {
+      bottom: 8%;
+      left: 34%;
+      animation-delay: 2.2s;
+    }
+
+    &--7 {
+      bottom: 80px;
+      left: 49%;
+      animation-delay: 0.3s;
+    }
+
+    &--8 {
+      bottom: 20px;
+      left: 200px;
+      animation-delay: 3.9s;
+    }
+
+    &--9 {
+      bottom: 5%;
+      left: 80%;
+      animation-delay: 4.7s;
+    }
+  }
+}
+
+@keyframes fadeAnim {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
 }
 
 @include media-breakpoint-up(xxl) {
   section,
   header {
-    padding: 0 80px;
+    // padding: 0 80px;
   }
 }

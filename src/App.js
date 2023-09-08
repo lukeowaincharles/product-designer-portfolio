@@ -1,22 +1,24 @@
 import React from "react";
 import "./App.scss";
 import Body from "./components/sections/Body";
-import Clients from "./components/sections/Clients";
-import Contact from "./components/sections/Contact";
+// import Clients from "./components/sections/Clients";
+// import Contact from "./components/sections/Contact";
 import Header from "./components/sections/Header";
+import Portrait from "./components/sections/Portrait";
+import Stars from "./components/utils/Stars";
 // import LizzieB from "../src/assets/images/liz-portrait.jpg";
 // import LizzieBwebp from "../src/assets/images/liz-portrait.webp";
 // import Webp from "./components/utils/Webp";
-import { isWebpSupported } from "react-image-webp/dist/utils";
-import useWindowWidth from "./components/utils/WindowWidth";
+// import { isWebpSupported } from "react-image-webp/dist/utils";
+// import useWindowWidth from "./components/utils/WindowWidth";
 
 function App() {
-  const width = useWindowWidth();
+  // const width = useWindowWidth();
 
   return (
     <div className="App">
       <main>
-        {width <= 768 && (
+        {/* {width <= 768 && (
           <div className="portrait">
             <div
               className={`${"portrait__background"} ${
@@ -30,16 +32,22 @@ function App() {
               </span>
             </div>
           </div>
-        )}
+        )} */}
 
         <article className="main-content">
           <Header />
-          <Body />
-          <Clients />
-          <Contact />
+          <div className="content-inner">
+            <Body />
+            <Portrait />
+            {/* img */}
+            {/* badges */}
+          </div>
+          <Stars />
+          {/* <Clients /> */}
+          {/* <Contact /> */}
         </article>
 
-        {width >= 768 && (
+        {/* {width >= 768 && (
           <div className="content">
             <div className="portrait">
               <div
@@ -55,7 +63,7 @@ function App() {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </main>
     </div>
   );
